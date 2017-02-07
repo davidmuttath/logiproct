@@ -1,6 +1,7 @@
 
 
 <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSedxTQ8QxuG2fftfS6h5Nm0UVyBOGObVmTmYfhHnD3Txgr01A/formResponse" target="hidden_iframe" onsubmit="submitted=true;">
+  <br>
   First name:<br>
   <input type="text" name="entry.2005620554" id="entry.2005620554"><br>
   Email Address:<br>
@@ -8,7 +9,7 @@
   Subject:<br>
   <input type="text" name="entry.840801627" id="entry.840801627"><br>
   Message:<br>
-  <input type="text" name="entry.839337160" id="entry.839337160">
+  <input type="text" name="entry.839337160" id="entry.839337160"><br>
   <input type="submit" value="Submit">
 </form>
 
@@ -20,6 +21,8 @@
 <script type="text/javascript">var submitted=false;</script>
 <script type="text/javascript">
 $('#gform').on('submit', function(e) {
-  $('#gform').prepend('Your submission has been processed...\n');
+  $('#gform').prepend('Your submission has been processed...');
+  $('#gform').prepend(document.gform.reset());
+  
   });
 </script>
