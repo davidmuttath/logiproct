@@ -12,8 +12,12 @@
   <input type="submit" value="Submit">
 </form>
 
-
-
+<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+function clearField() {
+if(document.getElementById) {
+document.gform.entry.2005620554.value = "";
+}
+}
 <script src="../js/jquery.min.js"></script>
 <script type="text/javascript">var submitted=false;</script>
 <script type="text/javascript">
