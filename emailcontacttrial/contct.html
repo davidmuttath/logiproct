@@ -1,6 +1,5 @@
 <html>
 <head>
-<body>
   <script src="assets/js/jquery.min.js"></script>
 <script type="text/javascript">var submitted=false;</script>
 <script type="text/javascript">
@@ -9,19 +8,18 @@ $('#gform').on('submit', function(e) {
   $('#gform').prepend('Your submission has been processed...');
   });
 </script>
-<form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSedxTQ8QxuG2fftfS6h5Nm0UVyBOGObVmTmYfhHnD3Txgr01A/formResponse" target="hidden_iframe" onsubmit="submitted=true;">
-  Name:<br>
+  </head>
+<body>
+ <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSedxTQ8QxuG2fftfS6h5Nm0UVyBOGObVmTmYfhHnD3Txgr01A/formResponse" target="hidden_iframe" onsubmit="submitted=true;">
+  First name:<br>
   <input type="text" name="entry.2005620554" id="entry.2005620554"><br>
-  Email Address:<br>
-  <input type="text" name="entry.1045781291" id="entry.1045781291"><br>
-  Subject:<br>
-  <input type="text" name="entry.840801627" id="entry.840801627"><br>
-  Message:<br>
-  <input type="text" name="entry.839337160" id="entry.839337160">
+  Last name:<br>
+  <input type="text" name="entry.1045781291" id="entry.1045781291">
   <input type="submit" value="Submit">
 </form>
 
 <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+
 </body>
-</head>
+
 </html>
